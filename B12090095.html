@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>
+            拍攝日誌
+        </title>
+        <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+        <script>
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    rtl: true
+                });
+            });
+        </script>
+        <style>
+            body{
+                margin: 0;
+            }
+            .top{
+                height: 100px;
+                background-color:rgb(255,248,238);
+                display: flex;
+                align-items: center;
+            }
+            .top .logo{
+                font-size: 24px;
+                font-weight:bold;
+            }
+            .top .logo img{
+                width: 100px;
+                vertical-align: middle;
+            }
+            .nav{
+                background-color: #d9ffba;
+                display: flex;
+                justify-content: center;
+            }
+            .nav ul{
+                list-style-type:none;
+                margin:  0;
+                padding: 0;
+                overflow:hidden;
+                background-color: #d9ffba;
+            }
+            .nav li{
+                float: left;
+            }
+            .nav li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .nav li a:hover{
+                background-color: #5cffb3;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            li.dropdown:hover{
+                background-color: #d9ffba;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #d9ffba;
+                min-width: 160px;
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .slider{
+                background-color: white;
+            }
+            .slider img{
+                height: 50px;
+            }
+            .banner{
+                background-image: linear-gradient(#d9ffba,#5cffb3);
+                padding: 30px;
+                text-align:center;
+            }
+            .banner h1{
+                padding: 20px;
+            }
+            .faculty{
+                background-color:rgb(255,248,238);
+                text-align:center;
+            }
+            .faculty img{
+                height: 200px;
+            }
+            .faculty .container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .faculty .photo h3{
+                color: black;
+                background-color: #d9ffba;
+                text-align: center;           
+            }
+            .contact{
+                background-color:rgb(255,248,238);
+                display: block;
+                justify-content: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .contact h2{
+                text-align:center;
+                color: #5cffb3;
+                font-size: 25px;
+            }
+            .contact .infos{
+                display:flex;
+                margin-top: 30px; 
+                justify-content: center;
+            }
+            .contact .infos .left{
+                display:block;
+                text-align: left;
+            }
+            .contact .infos .left b{
+                display:block;
+                text-align: left;
+                text-decoration: bold;
+                color: black;
+                font-size: 18px;
+                line-height: 18px;
+            }
+            .contact .infos .left span{
+                display:block;
+                text-align: left;
+                margin-top: 10px;
+                color: rgba(0, 0, 0, 0.516);
+                font-size: 16px;
+                padding-left: 20px;
+            }
+            .contact .infos .right{
+                height: 200px;
+            }
+            .contact .infos .right iframe{
+                width: 100%;
+                height: 100%;
+            }
+            .footer{
+                display: flex;
+                justify-content: center;
+                background-color: #d9ffba;
+                padding: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/logo1.png">我的相簿
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href=#Home>首頁</a></li>
+                <li><a href=#introduction>網頁簡介</a></li>
+                <li class="dropdown"><a href="#faculty">照片名稱</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">囚籠</a>
+                        <a href="#faculty">鴿子過馬路</a>
+                        <a href="#faculty">眺望</a>
+                    </div>
+                </li>
+                <li><a href=#about>相關資訊</a></li>
+            </ul>
+        </div>
+        <div class="slide">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/IMG20240503151752.jpg"/></li>
+                    <li><img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/IMG20240505070724.jpg"/></li>
+                    <li><img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/IMG20241125164349.jpg"/></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+                <h1>網頁簡介</h1>
+                <h1>靈感來源</h1>
+
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>照片介紹</h2>
+            <div class="container">
+                <a class="photo" href="">
+                    <img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/IMG20240503151752.jpg"/>
+                    <h3>囚籠</h3>
+                </a>
+                <a class="photo" href="">
+                    <img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/IMG20240505070724.jpg"/>
+                    <h3>鴿子過馬路</h3>
+               </a>
+               <a class="photo" href="">
+                    <img src="https://raw.githubusercontent.com/Hoplinston/html/refs/heads/main/IMG20241125164349.jpg"/>
+                   <h3>眺望</h3>
+               </a>
+            </div>
+        </div>
+        <div class="contact" id ="about">
+            <h2>相關資訊</h2>
+            <div class="infos">
+                <div class="left">
+                    <b>拍攝地點</b>
+                    <span>明新科技大學</span>
+                </div>
+                <div class="right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.185885150929!2d120.98912333466727!3d24.86332844316392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683154faa8283b%3A0x92cb1c5564a574ef!2z5piO5paw56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1536665837954" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright&copy;2024 Hoplinston. All Rights Reserved. 
+        </div>
+    </body>
+</html>
